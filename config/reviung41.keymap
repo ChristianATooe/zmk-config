@@ -22,7 +22,7 @@
                         bindings = <
    &kp TAB   &kp Q &kp O &kp Y &kp P &kp SEMI &kp FSLH &kp C &kp L &kp M &kp X &kp BSPC
    &kp K &kp H &kp A &kp E &kp I &kp DOT &kp G &kp T  &kp N &kp R &kp S EMI &kp F
-   &kp LSHFT &kp Z &kp A &kp U &kp U &kp COMMA &kp B &kp D &kp V &kp W &kp J &mt RSHFT RET
+   &kp LSHFT &kp Z &kp DEL &kp PG_UP &kp U &kp COMMA &kp B &kp D &kp V &kp W &kp J &mt RSHFT RET
                         &kp LCTRL  &mo 1 &kp SPACE &mo 2  &kp RALT
                         >;
                 };
