@@ -20,12 +20,12 @@
 // |  ALT |  Z  |  Ä  |  Ü  |  U  |  ,  |   |  B  |  D   |  V  |  W  |  J  |   ALT |
 //                | LWR | SHFT(BSPC) | GUI(RET) | CTRL(SPC) | RSE |
                         bindings = <
-   &kp TAB &kp Q &kp O   &kp Y    &kp P &kp SEMI        &kp MINUS &kp C &kp L &kp M &kp X &kp DEL
+   &kp TAB &kp Q &kp O   &kp Y    &kp P &kp SEMI        &kp MINUS &kp C &kp L &kp M &kp X &kp RET
    &kp K   &kp H &kp A   &kp E    &kp I &kp DOT         &kp G     &kp T &kp N &kp R &kp S &kp F
   &kp LALT &kp Z &kp SQT &kp LBKT &kp U &kp COMMA       &kp B     &kp D &kp V &kp W &kp J &kp RALT
                         &mo 1
                         &mt RSHFT BSPC 
-                        &mt LEFT_GUI RET
+                        &kp LGUI
                         &mt LCTRL SPACE  
                         &mo 2 
                         >;
