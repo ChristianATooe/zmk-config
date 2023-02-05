@@ -35,8 +35,8 @@
 // ----------------------------------------------------------------------------------
 // |  ^  |  {  |  }  |  <  |  >  |  !  |   |  ' |  7  |  8  |  9  |  -  |   /  |
 // |  @  |  [  |  ]  |  (  |  )  |  .  |   |  " |  4  |  5  |  6  |  +  |   *  |
-// | ALT |  #  |  |  |  ?  |  =  |  ,  |   |  _ |  1  |  2  |  3  | RET | ALTGR|
-//                        |     |     | @@@ |  0   | ADJ |
+// | ALT | ADJ |  |  |  ?  |  =  |  ,  |   |  _ |  1  |  2  |  3  | RET | ALTGR|
+//                 | DEL | SHFT(BSPC) | RAI |  GUI(SPC) | CTRL(RET) |
                         bindings = <
    &kp TAB &kp Q &kp O   &kp Y    &kp P &kp SEMI        &kp MINUS &kp C &kp L &kp M &kp X &kp RGUI
    &kp K   &kp H &kp A   &kp E    &kp N1 &kp DOT         &kp G     &kp N1 &kp N &kp R &kp S &kp F
@@ -47,7 +47,6 @@
                         &mt LGUI SPACE  
                         &mt RCTRL RET
                         >;
-                        >;
                 };
 
                 raise_layer {
@@ -55,7 +54,7 @@
 // |    |  1  |  2  |  3  |  4  |  5  |   |     |  7  |  8  |  9  |  0  | DEL |
 // |    |  -  |  =  |  [  |  ]  |  \  |   |     | F2  | F3  | F4  | F5  | F6  |
 // |    | ESC | GUI | ALT | CAPS|  "  |   |     | F8  | F9  | F10 | F11 | F12 |
-//                       | ADJ |     | BKSP |    |     |
+//                 | DEL | SHFT(BSPC) | LWR |  GUI(SPC) | CTRL(RET) |
                         bindings = <
    &trans &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp DEL
    &trans &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH      &kp F1    &kp N2    &kp F3    &kp F4    &kp F5    &kp F6
