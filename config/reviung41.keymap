@@ -15,15 +15,19 @@
 
                 default_layer {
 // -------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |   BKSP    |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |    '      |
-// | LWR  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |   LWR |
-//            | CTRL(BKSP) | SHFT(RET) | RSE | SPC | ALT |
+// |  TAB |  Q  |  O  |  Y  |  P  |  Ö  |   |  ß  |  C   |  L  |  M  |  X  |   DEL |
+// |   K  |  H  |  A  |  E  |  I  |  .  |   |  G  |  T   |  N  |  R  |  S  |    F  |
+// |  ALT |  Z  |  Ä  |  Ü  |  U  |  ,  |   |  B  |  D   |  V  |  W  |  J  |   ALT |
+//               | LWR | SHFT(BSPC) | GUI(BKSP) | CTRL(SPC) | RSE |
                         bindings = <
-   &kp TAB &kp Q &kp O   &kp Y    &kp P &kp SEMI  &kp MINUS &kp C &kp L &kp M &kp X &kp BSPC
-   &kp K   &kp H &kp A   &kp E    &kp I &kp DOT   &kp G    &kp T &kp N &kp R &kp S &kp F
-   &mo 1   &kp Z &kp SQT &kp LBKT &kp U &kp COMMA &kp B    &kp D &kp V &kp W &kp J &mo 1
-                        &mt LCTRL BSPC &mt RSHFT RET &mo 2 &kp SPACE  &kp RALT
+   &kp TAB &kp Q &kp O   &kp Y    &kp P &kp SEMI        &kp MINUS &kp C &kp L &kp M &kp X &kp DEL
+   &kp K   &kp H &kp A   &kp E    &kp I &kp DOT         &kp G     &kp T &kp N &kp R &kp S &kp F
+  &kp LALT &kp Z &kp SQT &kp LBKT &kp U &kp COMMA       &kp B     &kp D &kp V &kp W &kp J &kp RALT
+                        &mo 1
+                        &mt RSHFT BSPC 
+                        &mt GUI RET
+                        &mt LCTRL SPACE  
+                        &mo 2 
                         >;
                 };
 
@@ -32,12 +36,12 @@
 // |    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |    DEL    |
 // |    |  _  |  +  |  {  |  }  | "|" |   | LFT | DWN |  UP | RGT |  `  |     ~     |
 // |    | ESC | GUI | ALT | CAPS|  "  |   | HOME| END | PGUP| PGDN| PRSC| SHFT(RET) |
-//                       |     |     | RET | ADJ |     |
+//                       |     |     | RET |     | ADJ |
                         bindings = <
    &trans &kp EXCL  &kp AT      &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp N8    &kp LPAR  &kp RPAR  &kp DEL
    &trans &kp MINUS &kp KP_PLUS &kp LBRC &kp RBRC &kp PIPE       &kp LEFT  &kp DOWN &kp UP    &kp RIGHT &kp GRAVE &kp TILDE
    &trans &kp ESC   &kp LGUI    &kp LALT &kp CLCK &kp DQT        &kp HOME  &kp END  &kp PG_UP &kp PG_DN &kp PSCRN &mt RSHFT RET
-                                 &trans      &trans       &kp RET        &mo 3       &trans
+                                 &trans      &trans       &kp RET       &trans        &mo 3
                         >;
                 };
 
@@ -46,12 +50,12 @@
 // |    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL |
 // |    |  -  |  =  |  [  |  ]  |  \  |   | F1  | F2  | F3  | F4  | F5  | F6  |
 // |    | ESC | GUI | ALT | CAPS|  "  |   | F7  | F8  | F9  | F10 | F11 | F12 |
-//                       |     | ADJ | BKSP |    |     |
+//                       | ADJ |     | BKSP |    |     |
                         bindings = <
    &trans &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp DEL
    &trans &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH      &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6
    &trans &kp ESC   &kp LGUI  &kp RALT  &kp CLCK  &kp DQT       &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-                                &trans      &mo 3       &kp BSPC        &trans      &trans
+                                &mo 3       &trans      &kp BSPC        &trans      &trans
                         >;
                 };
 
