@@ -56,8 +56,10 @@
 // | ALT | ADJ |      |      |      | PGDN |   |     |  F9  |  F10 |  F11 |  F12 | ALTGR|
 //                 | DEL | SHFT(BSPC) | LWR |  GUI(SPC) | CTRL(RET) |
 //                        bindings = <
-     &kp ESC  &kp none &kp HOME &kp UP_ARROW   &kp END   &kp none      &kp none &kp F1 &kp F2  &kp F3  &kp F4  &kp PSCRN
-     &kp CAPS &kp INS  &kp LEFT &kp DOWN &kp RIGHT &kp PG_UP     &kp none &kp F5 &kp F6  &kp F7  &kp F8  &kp none
+    &kp GRAVE &kp RA(N7) &kp RA(N0) &kp NON_US_BSLH &kp RS(NON_US_BSLH) &kp RS(N1)     &kp LS(BSLH) &kp KP_N4 &kp KP_N5 &kp KP_N6  &kp KP_MINUS &kp KP_DIVIDE
+   &kp RA(Q) &kp RA(N8) &kp RA(N9) &kp RS(N8)      &kp RS(N9)          &kp DOT        &kp KP_N0    &kp KP_N1 &kp KP_N2 &kp KP_N3  &kp KP_PLUS  &kp LS(RBKT)
+//    &kp ESC  &kp none &kp HOME &kp UP_ARROW   &kp END   &kp none      &kp none &kp F1 &kp F2  &kp F3  &kp F4  &kp PSCRN
+//     &kp CAPS &kp INS  &kp LEFT &kp DOWN &kp RIGHT &kp PG_UP     &kp none &kp F5 &kp F6  &kp F7  &kp F8  &kp none
      &kp LALT &to 3    &kp none &kp none &kp none  &kp PG_DN     &kp none &kp F9 &kp F10 &kp F11 &kp F12 &kp RALT
                           &to 0
                           &mt RSHFT BSPC 
@@ -67,23 +69,23 @@
                           >;
                 };
                        
-//                adjust_layer {
+                adjust_layer {
 // -----------------------------------------------------------------------------------------
 // | RGB BRI+ | RGB SAT+ | RGB HUE+ | RGB ANI+ |    | RGB TOG |   |  BT1  | BT2 | BT3 | BT4 | BT5 | BT CLR |
 // | RGB BRI- | RGB SAT- | RGB HUE- | RGB ANI- |    |         |   |       |     |     |     |     |        |
 // |          |          |          |          |    |         |   | RESET |     |     |     |     |        |
 //                                              |     |     |     |     |     |
-//                          bindings = <
-//     &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_EFF &none &rgb_ug RGB_TOG    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
-//     &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &none &none              &none        &kp N3        &none        &none        &none        &none
-//     &none           &none           &none           &none           &none &none              &reset       &none        &none        &none        &none        &none
-//                          &to 0
-//                          &mt RSHFT BSPC 
-//                          &to 1
-//                          &mt LGUI SPACE  
-//                          &mt RCTRL RET
-//                          >;
-//                };
+                          bindings = <
+     &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_EFF &none &rgb_ug RGB_TOG    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
+     &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &none &none              &none        &kp N3        &none        &none        &none        &none
+     &none           &none           &none           &none           &none &none              &reset       &none        &none        &none        &none        &none
+                          &to 0
+                          &mt RSHFT BSPC 
+                          &to 1
+                          &mt LGUI SPACE  
+                          &mt RCTRL RET
+                          >;
+                };
         };
 };
 //                lower_layer {
