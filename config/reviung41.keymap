@@ -15,17 +15,17 @@
 
                 default_layer {
 // -------------------------------------------------------------------------------------
-// |  TAB |  Q  |  O  |  Y  |  P  |  Ö  |   |  ß  |  C   |  L  |  M  |  X  |   RET |
+// |  TAB |  Q  |  O  |  Y  |  P  |  Ö  |   |  ß  |  C   |  L  |  M  |  X  |   GUI |
 // |   K  |  H  |  A  |  E  |  I  |  .  |   |  G  |  T   |  N  |  R  |  S  |    F  |
 // |  ALT |  Z  |  Ä  |  Ü  |  U  |  ,  |   |  B  |  D   |  V  |  W  |  J  |   ALT |
 //                  | LWR | SHFT(BSPC) | GUI | CTRL(SPC) | RSE |
                         bindings = <
-   &kp TAB &kp Q &kp O   &kp Y    &kp P &kp SEMI        &kp MINUS &kp C &kp L &kp M &kp X &kp RET
+   &kp TAB &kp Q &kp O   &kp Y    &kp P &kp SEMI        &kp MINUS &kp C &kp L &kp M &kp X &kp RGUI
    &kp K   &kp H &kp A   &kp E    &kp I &kp DOT         &kp G     &kp T &kp N &kp R &kp S &kp F
   &kp LALT &kp Z &kp SQT &kp LBKT &kp U &kp COMMA       &kp B     &kp D &kp V &kp W &kp J &kp RALT
                         &mo 1
                         &mt RSHFT BSPC 
-                        &kp LGUI
+                        &mt LGUI RET
                         &mt LCTRL SPACE  
                         &mo 2 
                         >;
@@ -59,7 +59,7 @@
                         >;
                 };
                        
-                       u,,ux d 
+             
                 adjust_layer {
 // -----------------------------------------------------------------------------------------
 // | RGB BRI+ | RGB SAT+ | RGB HUE+ | RGB ANI+ |    | RGB TOG |   |  BT1  | BT2 | BT3 | BT4 | BT5 | BT CLR |
