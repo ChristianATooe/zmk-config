@@ -58,7 +58,7 @@
                         bindings = <
    &kp GRAVE &kp RA(N7) &kp RA(N0) &kp NON_US_BSLH &kp RS(NON_US_BSLH) &kp RS(N1)     &kp LS(BSLH) &kp KP_N4 &kp KP_N5 &kp KP_N6  &kp KP_MINUS &kp KP_DIVIDE
    &kp RA(Q) &kp RA(N8) &kp RA(N9) &kp RS(N8)      &kp RS(N9)          &kp DOT        &kp KP_N0    &kp KP_N1 &kp KP_N2 &kp KP_N3  &kp KP_PLUS  &kp LS(RBKT)
-   &kp LALT  &to 3      &kp SLASH  &kp RS(MINUS)   &kp RS(N0)          &kp COMMA      &kp none     &kp F9    &kp F10   &kp F11    &kp F12      &kp RALT
+   &kp LALT  &to 3      &kp none   &kp none        &kp noen            &kp PGDN       &kp LS(N2)   &kp KP_N7 &kp KP_N8 &kp KP_N9  &kp RET      &kp RALT
                         &to 0
                         &mt RSHFT BSPC 
                         &to 1
