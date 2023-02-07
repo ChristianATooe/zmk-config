@@ -20,14 +20,14 @@
 // |  ALT |  Z  |  Ä  |  Ü  |  U  |  ,  |   |  B  |  D   |  V  |  W  |  J  | ALTGR|
 //                | DEL | SHFT(BSPC) | LWR |  GUI(SPC) | CTRL(RET) |
                         bindings = <
-   &kp TAB &kp Q &kp O   &kp Z    &kp P &kp SEMI        &kp MINUS &kp C &kp L &kp M &kp X &kp SLASH
+   &kp TAB &kp Q &kp O   &kp Z    &kp P &kp SEMI        &kp MINUS &kp C &kp L &kp M &kp J &kp SLASH
    &kp K   &kp H &kp A   &kp E    &kp I &kp DOT         &kp G     &kp T &kp N &kp R &kp S &kp F
-  &kp LALT &kp Y &kp SQT &kp LBKT &kp U &kp COMMA       &kp B     &kp D &kp V &kp W &kp J &kp RALT
+  &kp LALT &kp Y &kp SQT &kp LBKT &kp U &kp COMMA       &kp B     &kp D &kp V &kp W &kp X &kp RALT
                         &kp DEL
                         &mt RSHFT BSPC 
                         &to 1
-                        &mt LGUI SPACE  
-                        &mt RCTRL RET
+                        &mt RCTRL SPACE  
+                        &mt LGUI RET
                         >;
                 };
 
@@ -44,8 +44,8 @@
                         &to 0
                         &mt RSHFT BSPC 
                         &to 2
-                        &mt LGUI SPACE  
-                        &mt RCTRL RET
+                        &mt RCTRL SPACE  
+                        &mt LGUI RET
                         >;
                 };
 
@@ -62,8 +62,8 @@
                         &to 0
                         &mt RSHFT BSPC 
                         &to 1
-                        &mt LGUI SPACE  
-                        &mt RCTRL RET
+                        &mt RCTRL SPACE  
+                        &mt LGUI RET
                         >;
                 };
                        
@@ -80,8 +80,8 @@
                           &to 0
                           &mt RSHFT BSPC 
                           &to 1
-                          &mt LGUI SPACE  
-                          &mt RCTRL RET
+                          &mt RCTRL SPACE  
+                          &mt LGUI RET
                           >;
                 };
         };
