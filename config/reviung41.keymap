@@ -8,6 +8,12 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/mouse.h>
+
+&mmv {
+   time-to-max-speed-ms = <680>;
+   acceleration-exponent=<2>;
+};
 
 / {
         keymap {
@@ -74,9 +80,9 @@
 // |          |          |          |          |    |         |   | RESET |     |     |     |     |        |
 //                                              |     |     |     |     |     |
                           bindings = <
-     &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_EFF &none &rgb_ug RGB_TOG    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
-     &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &none &none              &none        &kp N3        &none        &none        &none        &none
-     &none           &none           &none           &none           &none &none              &reset       &none        &none        &none        &none        &none
+     &trans  &mwh SCROLL_LEFT    &mmv MOVE_UP    &mwh SCROLL_RIGHT    &kp NUM_5 	      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
+     &kp F1 &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp DEL  		              &none        &kp N3        &none        &none        &none        &none
+     &td LG(GRAVE) GRAVE &mkp RCLK  &mwh SCROLL_UP &mwh SCROLL_DOWN &trans                    &reset       &none        &none        &none        &none        &none
                           &to 0
                           &mt RSHFT BSPC 
                           &to 1
