@@ -22,7 +22,7 @@
                 default_layer {
 // -------------------------------------------------------------------------------------
 // |  TAB |  Q  |  O  |  Y  |  P  |  Ö  |###|  ß  |  C   |  L  |  M  |  X  |  ESC |
-// |   K  |  H  |  A  |  E  |  I  |  .  |###|  G  |  T   |  N  |  R  |  S  |   F  |
+// |   K  |  H  |  A  |  E  |  I  | .(_)|###|  G  |  T   |  N  |  R  |  S  |   F  |
 // |  ALT |  Z  |  Ä  |  Ü  |  U  |  ,  |###|  B  |  D   |  V  |  W  |  J  | ALTGR|
 //                | DEL | SHFT(BSPC) | @1@ |  GUI(SPC) | CTRL(RET) |
                         bindings = <
@@ -55,7 +55,7 @@
 //                    | @0@ | SHFT(BSPC) | @1@ |  GUI(SPC) | CTRL(RET) |
                         bindings = <
    &kp ESC  &kp INS  &kp PSCRN &none  &kp PGUP  &kp CAPS         &kp RA(RBKT) &kp RS(RBKT) &kp BSLH   &none      &none      &none
-   &kp HOME &kp LEFT &kp DOWN  &kp UP &kp RIGHT &kp END          &kp RS(N3)   &kp RA(E)    &kp RS(N4) &kp RS(N5) &kp RS(N6) &kp RA(RS(NON_US_BSLH))
+   &kp HOME &kp LEFT &kp DOWN  &kp UP &kp RIGHT &kp END          &kp RS(N3)   &kp RA(E)    &kp RS(N4) &kp RS(N5) &kp RS(N6) &kp RA(NON_US_BSLH)
    &kp LALT &to 3    &none     &none  &kp PGDN  &none            &kp LC(A)    &kp LC(Z)    &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp RALT
                                   &to 0 &mt RSHFT BSPC    &to 1    &mt RCTRL SPACE &mt LGUI RET
                         >;
