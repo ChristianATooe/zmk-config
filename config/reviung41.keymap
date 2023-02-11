@@ -21,19 +21,15 @@
 
                 default_layer {
 // -------------------------------------------------------------------------------------
-// |  TAB |  Q  |  O  |  Y  |  P  |  Ö  |###|  ß  |  C   |  L  |  M  |  X  |   -  |
+// |  TAB |  Q  |  O  |  Y  |  P  |  Ö  |###|  ß  |  C   |  L  |  M  |  X  |  ESC |
 // |   K  |  H  |  A  |  E  |  I  |  .  |###|  G  |  T   |  N  |  R  |  S  |   F  |
 // |  ALT |  Z  |  Ä  |  Ü  |  U  |  ,  |###|  B  |  D   |  V  |  W  |  J  | ALTGR|
-//                | DEL | SHFT(BSPC) | LWR |  GUI(SPC) | CTRL(RET) |
+//                | DEL | SHFT(BSPC) | @1@ |  GUI(SPC) | CTRL(RET) |
                         bindings = <
-   &kp TAB &kp Q &kp O   &kp Z    &kp P &kp SEMI        &kp MINUS &kp C &kp L &kp M &kp J &kp SLASH
-   &kp K   &kp H &kp A   &kp E    &kp I &kp DOT         &kp G     &kp T &kp N &kp R &kp S &kp F
-  &kp LALT &kp Y &kp SQT &kp LBKT &kp U &kp COMMA       &kp B     &kp D &kp V &kp W &kp X &kp RALT
-                        &kp DEL
-                        &mt RSHFT BSPC 
-                        &to 1
-                        &mt RCTRL SPACE  
-                        &mt LGUI RET
+   &kp TAB &kp Q &kp O   &kp Z    &kp P &kp SEMI           &kp MINUS &kp C &kp L &kp M &kp J &kp ESC
+   &kp K   &kp H &kp A   &kp E    &kp I &mt LS(SLASH) DOT  &kp G     &kp T &kp N &kp R &kp S &kp F
+  &kp LALT &kp Y &kp SQT &kp LBKT &kp U &kp COMMA          &kp B     &kp D &kp V &kp W &kp X &kp RALT
+                          &kp DEL &mt RSHFT BSPC    &to 1    &mt RCTRL SPACE &mt LGUI RET
                         >;
                 };
 
@@ -42,52 +38,40 @@
 // |  ^  |  {  |  }  |  <  |  >  |  !  |###|  '  |  4  |  5  |  6  |  -  |   /  |
 // |  @  |  [  |  ]  |  (  |  )  |  .  |###|  0  |  1  |  2  |  3  |  +  |   *  |
 // | ALT | ADJ |  /  |  ?  |  =  |  ,  |###|  "  |  7  |  8  |  9  | RET | ALTGR|
-//                 | DEL | SHFT(BSPC) | RAI |  GUI(SPC) | CTRL(RET) |
+//                 | @0@ | SHFT(BSPC) | @2@ |  GUI(SPC) | CTRL(RET) |
                         bindings = <
-   &kp GRAVE &kp RA(N7) &kp RA(N0) &kp NON_US_BSLH &kp RS(NON_US_BSLH) &kp RS(N1)     &kp LS(BSLH) &kp KP_N4 &kp KP_N5 &kp KP_N6  &kp KP_MINUS &kp KP_DIVIDE
-   &kp RA(Q) &kp RA(N8) &kp RA(N9) &kp RS(N8)      &kp RS(N9)          &kp DOT        &kp KP_N0    &kp KP_N1 &kp KP_N2 &kp KP_N3  &kp KP_PLUS  &kp LS(RBKT)
-   &kp LALT  &to 3      &kp SLASH  &kp RS(MINUS)   &kp RS(N0)          &kp COMMA      &kp LS(N2)   &kp KP_N7 &kp KP_N8 &kp KP_N9  &kp RET      &kp RALT
-                        &to 0
-                        &mt RSHFT BSPC 
-                        &to 2
-                        &mt RCTRL SPACE  
-                        &mt LGUI RET
+   &kp GRAVE &kp RA(N7) &kp RA(N0) &kp NON_US_BSLH &kp RS(NON_US_BSLH) &kp RS(N1)       &kp LS(BSLH) &kp N4 &kp N5 &kp N6  &kp KP_MINUS &kp KP_DIVIDE
+   &kp RA(Q) &kp RA(N8) &kp RA(N9) &kp RS(N8)      &kp RS(N9)          &kp DOT          &kp N0       &kp N1 &kp N2 &kp N3  &kp KP_PLUS  &kp KP_MULTIPLY
+   &kp LALT  &to 3      &kp SLASH  &kp RS(MINUS)   &kp RS(N0)          &kp COMMA        &kp LS(N2)   &kp N7 &kp N8 &kp N9  &kp RET      &kp RALT
+                                                       &kp DEL &mt RSHFT BSPC    &to 2    &mt RCTRL SPACE &mt LGUI RET
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// | ESC |     | HOME |  UP  |  END |      |###|     |  F1  |  F2  |  F3  |  F4  | PSCRN|
-// | CAPS| INS | LEFT | DOWN | RIGHT| PGUP |###|     |  F5  |  F6  |  F7  |  F8  |      |
-// | ALT | ADJ |      |      |      | PGDN |###|     |  F9  |  F10 |  F11 |  F12 | ALTGR|
-//                 | DEL | SHFT(BSPC) | LWR |  GUI(SPC) | CTRL(RET) |
+// | ESC | INS  | PSCRN |    | PGUP | CAPS|###|  ~  |  *  |  #  |     |     |      |
+// | HOME| LEFT | DOWN  | UP | RIGHT| END |###|  §  |  €  |  $  |  %  |  &  |   |  |
+// | ALT | ADJ  |       |    | PGDN |     |###| C+A | C+Z | C+V | C+C | C+X | ALTGR|
+//                    | @0@ | SHFT(BSPC) | @1@ |  GUI(SPC) | CTRL(RET) |
                         bindings = <
-   &kp ESC  &none   &kp HOME &kp UP   &kp END   &none         &none &kp F1 &kp F2  &kp F3  &kp F4  &kp PSCRN
-   &kp CAPS &kp INS &kp LEFT &kp DOWN &kp RIGHT &kp PGUP      &none &kp F5 &kp F6  &kp F7  &kp F8  &none
-   &kp LALT &to 3   &none    &none    &none     &kp PGDN      &none &kp F9 &kp F10 &kp F11 &kp F12 &kp RALT
-                        &to 0
-                        &mt RSHFT BSPC 
-                        &to 1
-                        &mt RCTRL SPACE  
-                        &mt LGUI RET
+   &kp ESC  &kp INS  &kp PSCRN &none  &kp PGUP  &kp CAPS         &RA(RBKT) &RS(RBKT) &kp BSLH &none   &none   &none
+   &kp HOME &kp LEFT &kp DOWN  &kp UP &kp RIGHT &kp END          &RS(N3)   &RA(E)    &RS(N4)  &RS(N5) &RS(N6) &RA(RS(NON_US_BSLH))
+   &kp LALT &to 3    &none     &none  &kp PGDN  &none            &LC(A)    &LC(Z)    &LC(V)   &LC(C)  &LC(X)  &kp RALT
+                                kp DEL &mt RSHFT BSPC    &to 1    &mt RCTRL SPACE &mt LGUI RET
                         >;
                 };
                        
                 adjust_layer {
 // -----------------------------------------------------------------------------------------
-// | ESC |    |          |  M  UP   |         |    |###|     | MS UP |  MS LE  |  MS RI  |       |       | 
-// |     |    |  M LEFT  |  M DOWN  | M RIGHT |    |###|     | MS DN | MCLK LE | MCLK RI |       |       | 
-// | ALT |    |          |          |         |    |###| BT1 |  BT2  |   BT3   | BT CLR  | RESET | ALTGR |
-//                             | DEL | SHFT(BSPC) | LWR |  GUI(SPC) | CTRL(RET) |
+// | ESC |   F1   |   F2   |   F3  |   F4    |    |###| VUP |  MS LE  | MS UP |  MS RI  |   F9   |  F10  | 
+// | RST | M LEFT | M DOWN | M  UP | M RIGHT |    |###| VMU | MCLK LE | MS DN | MCLK RI |   F11  |  F12  | 
+// | ALT |   F5   |   F6   |   F7  |   F8    |    |###| VDN |   BT1   |  BT2  |  BT3    | BT CLR | ALTGR |
+//                       | @0@ | SHFT(BSPC) | @1@ |  GUI(SPC) | CTRL(RET) |
                           bindings = <
-     &kp ESC  &none &none            &mmv MOVE_UP   &none             &none       &none        &mwh SCROLL_UP   &mwh SCROLL_LEFT &mwh SCROLL_RIGHT &none        &none
-     &none    &none &mmv MOVE_LEFT   &mmv MOVE_DOWN &mmv MOVE_RIGHT   &none  	  &none        &mwh SCROLL_DOWN &mkp LCLK        &mkp RCLK         &none        &none
-     &kp LALT &none &none            &none          &none             &none       &bt BT_SEL 0 &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_CLR        &reset       &kp RALT
-                          &to 0
-                          &mt RSHFT BSPC 
-                          &to 1
-                          &mt RCTRL SPACE  
-                          &mt LGUI RET
+     &kp ESC  &kp F1         &kp F2         &KP F3       &kp F4            &kp C_NEXT        &kp C_VOL_UP &mwh SCROLL_LEFT &mwh SCROLL_UP   &mwh SCROLL_RIGHT &kp F9       &kp F10
+     &reset   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT   &kp C_PP  	     &kp C_MUTE   &mkp LCLK        &mwh SCROLL_DOWN &mkp RCLK         &kp F11      &kp F12
+     &kp LALT &kp F5         &kp F6         &kp F7       &kp F8            &kp C_PREV        &kp C_VOL_DN &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2      &bt BT_CLR   &kp RALT
+                                                             &kp DEL &mt RSHFT BSPC    &to 1    &mt RCTRL SPACE &mt LGUI RET
                           >;
                 };
         };
