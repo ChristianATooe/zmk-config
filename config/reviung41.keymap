@@ -54,9 +54,9 @@
 // | ALT | ADJ  |       |    | PGDN |     |###| C+A | C+Z | C+V | C+C | C+X | ALTGR|
 //                    | @0@ | SHFT(BSPC) | @1@ |  GUI(SPC) | CTRL(RET) |
                         bindings = <
-   &kp ESC  &kp INS  &kp PSCRN &none  &kp PGUP  &kp CAPS         &RA(RBKT) &RS(RBKT) &kp BSLH &none   &none   &none
-   &kp HOME &kp LEFT &kp DOWN  &kp UP &kp RIGHT &kp END          &RS(N3)   &RA(E)    &RS(N4)  &RS(N5) &RS(N6) &RA(RS(NON_US_BSLH))
-   &kp LALT &to 3    &none     &none  &kp PGDN  &none            &LC(A)    &LC(Z)    &LC(V)   &LC(C)  &LC(X)  &kp RALT
+   &kp ESC  &kp INS  &kp PSCRN &none  &kp PGUP  &kp CAPS         &kp RA(RBKT) &kp RS(RBKT) &kp BSLH   &none      &none      &none
+   &kp HOME &kp LEFT &kp DOWN  &kp UP &kp RIGHT &kp END          &kp RS(N3)   &kp RA(E)    &kp RS(N4) &kp RS(N5) &kp RS(N6) &kp RA(RS(NON_US_BSLH))
+   &kp LALT &to 3    &none     &none  &kp PGDN  &none            &kp LC(A)    &kp LC(Z)    &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp RALT
                                 &kp DEL &mt RSHFT BSPC    &to 1    &mt RCTRL SPACE &mt LGUI RET
                         >;
                 };
