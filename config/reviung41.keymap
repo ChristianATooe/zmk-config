@@ -22,14 +22,14 @@
 
                 default_layer {
 // -------------------------------------------------------------------------------------
-// |  ESC |  Q  |  O  |  Y  |  P  |  Ö  |###|  ß  |  C   |  M  |  L  |  J  | TAB |
+// |  ESC |  Q  |  O  |  Y  |  P  | Ö(-)|###|  ß  |  C   |  M  |  L  |  J  | TAB |
 // |   K  |  H  |  A  |  E  |  I  | .(_)|###|  G  |  T   |  N  |  R  |  S  |  F  |
-// |  ALT |  Z  |  Ä  |  Ü  |  U  |  ,  |###|  B  |  D   |  V  |  W  |  X  | @3@ |
+// |  ALT |  Z  |  Ä  |  Ü  |  U  | ,(')|###|  B  |  D   |  V  |  W  |  X  | @3@ |
 //            | CTRL(DEL) | SHFT(BSPC) | @1@ |  GUI(SPC) | CTRL(RET) |
                         bindings = <
-   &kp ESC &kp Q &kp O   &kp Z    &kp P &kp SEMI                &kp MINUS &kp C &kp M &kp L &kp J &kp TAB
+   &kp ESC &kp Q &kp O   &kp Z    &kp P &mt SLASH SEMI          &kp MINUS &kp C &kp M &kp L &kp J &kp TAB
    &kp K   &kp H &kp A   &kp E    &kp I &mt LS(SLASH) DOT       &kp G     &kp T &kp N &kp R &kp S &kp F
-  &kp LALT &kp Y &kp SQT &kp LBKT &kp U &kp COMMA               &kp B     &kp D &kp V &kp W &kp X &to 3
+  &kp LALT &kp Y &kp SQT &kp LBKT &kp U &mt LS(BSLH) COMMA      &kp B     &kp D &kp V &kp W &kp X &to 3
                          &mt LCTRL DEL &mt RSHFT BSPC    &to 1    &mt RCTRL SPACE &mt LGUI RET
                         >;
                 };
