@@ -53,12 +53,12 @@
 // | ESC | INS  | PSCRN | D  | PGUP | CAPS|###|  ~  |  *  |  #  |  ^  |  \  |  RST |
 // | HOME| LEFT | DOWN  | UP | RIGHT| END |###|  §  |  €  |  $  |  %  |  @  |   |  |
 // | ALT | C+S  |  C+F  | F4 | PGDN |     |###| C+A | C+Z | C+V | C+C | C+X |  @3@ |
-//                    | @0@ | SHFT(BSPC) | @1@ | CTRL+GUI(SPC) |  GUI(RET) |
+//                    | @0@ | SHFT(BSPC) | @1@ | CTRL(SPC) |  CTRL+GUI(RET) |
                         bindings = <
    &kp ESC  &kp INS   &kp PSCRN &kp D  &kp PGUP  &kp CAPS         &kp RA(RBKT) &kp RS(RBKT) &kp BSLH   &kp GRAVE  &kp RA(BSLH) &reset
    &kp HOME &kp LEFT  &kp DOWN  &kp UP &kp RIGHT &kp END          &kp RS(N3)   &kp RA(E)    &kp RS(N4) &kp RS(N5) &kp RA(Q)    &kp RA(NON_US_BSLH)
    &kp LALT &kp LC(S) &kp LC(F) &kp F4 &kp PGDN  &none            &kp LC(A)    &kp LC(Z)    &kp LC(V)  &kp LC(C)  &kp LC(X)    &to 3
-                                  &to 0 &mt RSHFT BSPC    &to 1    &mt lg LG(RCTRL) SPACE &mt LGUI RET
+                                  &to 0 &mt RSHFT BSPC    &to 1    &mt lg RCTRL SPACE &mt LC(LGUI) RET
                         >;
                 };
                        
